@@ -1,0 +1,123 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>HTML5 Elements</title> 
+    <style> 
+        table { 
+            width: 80%; 
+            border-collapse: collapse; 
+        } 
+        th, td { 
+            border: 1px solid black; 
+            padding: 8px; 
+            text-align: left; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <h1>HTML5 Elements</h1> 
+    <!-- Ordered list with Roman numerals --> 
+     <h2>Ordered List</h2> 
+     <ol type="I"> 
+        <li>First item</li> 
+        <li>Second item</li> 
+        <li>Third item</li> 
+    </ol> 
+    <!-- External image --> 
+     <h2>Image from Pexels</h2> 
+     <img src="https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Pexels Image" width="300"> 
+    
+     <!-- Table of contacts --> 
+      <h2>Contact Table</h2> 
+      <table> 
+        <tr> 
+            <th>Name</th> 
+            <th>Address</th> 
+            <th>Mobile</th> 
+            <th>Email</th> 
+        </tr> 
+        <tr> 
+            <td>John Doe</td> 
+            <td>123 Main St</td> 
+            <td>555-1234</td> 
+            <td>john.doe@example.com</td> 
+        </tr> 
+        <tr> 
+            <td>Jane Doe</td> 
+            <td>456 Oak Ave</td> 
+            <td>555-5678</td> 
+            <td>jane.doe@example.com</td> 
+        </tr> 
+        <tr> 
+            <td>Peter Jones</td> 
+            <td>789 Pine Ln</td> 
+            <td>555-9012</td> 
+            <td>peter.jones@example.com</td> 
+        </tr> 
+        <tr> 
+            <td>Mary Smith</td> 
+            <td>1011 Maple Dr</td> 
+            <td>555-3456</td> 
+            <td>mary.smith@example.com</td> 
+        </tr> 
+        <tr> 
+            <td>David Brown</td> 
+            <td>1213 Birch Rd</td> 
+            <td>555-7890</td> 
+            <td>david.brown@example.com</td> 
+        </tr> 
+    </table> 
+    <!-- Registration form --> 
+     <h2>Registration Form</h2> 
+     <form action="/submit" method="post"> 
+        <label for="name">Name:</label><br> 
+        <input type="text" id="name" name="name" required placeholder="Enter your name"><br><br> 
+        <label for="email">Email:</label><br> 
+        <input type="email" id="email" name="email" required placeholder="Enter your email"><br><br> 
+        <label for="password">Password:</label><br> 
+        <input type="password" id="password" name="password" required minlength="8" placeholder="Enter your password"><br><br> 
+        <label for="dob">Date of Birth:</label><br> 
+        <input type="date" id="dob" name="dob" required><br><br> 
+        <label for="country">Country:</label><br> 
+        <select id="country" name="country" required> 
+            <option value="">Select your country</option> 
+            <option value="usa">USA</option> 
+            <option value="canada">Canada</option>
+            <option value="sa">South Africa</option>
+            <option value="lesotho">Lesotho</option>
+            <option value="botswana">Botswana</option> 
+            <option value="uk">UK</option> 
+        </select><br><br> 
+        <label>Gender:</label><br> 
+        <input type="radio" id="male" name="gender" value="male" required> 
+        <label for="male">Male</label><br>
+        <input type="radio" id="other" name="gender" value="other" required> 
+        <label for="female">Other</label><br> 
+        <input type="radio" id="female" name="gender" value="female" required> 
+        <label for="female">Female</label><br><br> 
+        <label>Hobbies:</label><br> 
+        <input type="checkbox" id="reading" name="hobbies[]" value="reading"> 
+        <label for="reading">Reading</label><br> 
+        <input type="checkbox" id="hiking" name="hobbies[]" value="hiking"> 
+        <label for="hiking">Hiking</label><br>
+        <input type="checkbox" id="cooking" name="hobbies[]" value="cooking"> 
+        <label for="hiking">Cooking</label><br>  
+        <input type="checkbox" id="coding" name="hobbies[]" value="coding"> 
+        <label for="coding">Coding</label><br><br> 
+        <input type="submit" value="Submit">
+     </form> 
+     <!-- Multimedia elements --> 
+      <h2>Multimedia</h2> 
+      <audio controls> 
+        <source src="audio.mp3" type="audio/mpeg"> 
+        Your browser does not support the audio element. 
+    </audio> 
+    <br> 
+    <video width="320" height="240" controls> 
+        <source src="https://videos.pexels.com/video-files/2022396/2022396-sd_640_360_30fps.mp4" type="video/mp4"> 
+        Your browser does not support the video tag. 
+    </video> 
+</body> 
+</html>
